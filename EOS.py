@@ -26,7 +26,7 @@ def decrypt(data, privateKey: str):
 
 class Eos:
     def __init__(self, name: str, privateKey: str):
-        self.path = name+'.lstore'
+        self.path = name+'.eos'
         self.pk = hashlib.sha256(str(privateKey).encode()).hexdigest()[16:32]
         if not os.path.exists(self.path):
             with open(self.path, 'wb') as f:
