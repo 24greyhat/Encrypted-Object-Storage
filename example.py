@@ -1,4 +1,4 @@
-from Eos import Eos
+from EOS import Eos
 
 x = Eos("example", "123")
 
